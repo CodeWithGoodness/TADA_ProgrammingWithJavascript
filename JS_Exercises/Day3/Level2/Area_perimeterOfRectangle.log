@@ -1,0 +1,42 @@
+var length = prompt("Enter the value of length: ")
+var width = prompt("ENter the value of the width: ")
+console.log( `The area of the rectangle is ${length * width} and its perimeter is ${2(base + height)}`)
+VM1008:3 Uncaught TypeError: 2 is not a function
+    at <anonymous>:3:86
+(anonymous) @ VM1008:3
+var length = Number(prompt("Enter the value of length: "))
+var width = Number(prompt("ENter the value of the width: "))
+console.log( `The area of the rectangle is ${length * width} and its perimeter is ${2(base + height)}`)
+VM1033:3 Uncaught TypeError: 2 is not a function
+    at <anonymous>:3:86
+(anonymous) @ VM1033:3
+var length = Number(prompt("Enter the value of length: "))
+var width = Number(prompt("Enter the value of the width: "))
+console.log( `The area of the rectangle is ${length * width} and its perimeter is ${2 * (base + height)}`)
+VM1043:3 The area of the rectangle is 6 and its perimeter is 4020
+undefined
+var length = Number(prompt("Enter the value of length: "))
+var width = Number(prompt("Enter the value of the width: "))
+console.log( `The area of the rectangle is ${length * width} and its perimeter is ${2 * (base + height)}`)
+VM1045:3 The area of the rectangle is 1 and its perimeter is 4020
+undefined
+var length = Number(prompt("Enter the value of length: "))
+var width = Number(prompt("Enter the value of the width: "))
+console.log( `The area of the rectangle is ${length * width} and its perimeter is ${(base + height)}`)
+VM1053:3 The area of the rectangle is 8 and its perimeter is 2010
+undefined
+var length = Number(prompt("Enter the value of length: "))
+var width = Number(prompt("Enter the value of the width: "))
+console.log( `The area of the rectangle is ${length * width} and its perimeter is ${(length+ width)}`)
+VM1088:3 The area of the rectangle is 6 and its perimeter is 5
+undefined
+var length = Number(prompt("Enter the value of length: "))
+var width = Number(prompt("Enter the value of the width: "))
+console.log( `The area of the rectangle is ${length * width} and its perimeter is ${2 * (length+ width)}`)
+VM1096:3 The area of the rectangle is 8 and its perimeter is 12
+undefined
+var length = Number(prompt("Enter the value of length: "))
+var width = Number(prompt("Enter the value of the width: "))
+console.log( `The area of the rectangle is ${length * width} and its perimeter is ${2 * (length+ width)}`)
+VM1098:3 The area of the rectangle is 6 and its perimeter is 10
+undefined

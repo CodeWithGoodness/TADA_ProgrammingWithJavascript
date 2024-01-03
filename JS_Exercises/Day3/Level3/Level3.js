@@ -24,11 +24,16 @@
 
 // console.log(objectMaker(doubleIt(100)))
 
-let counter = 3
-function example(){
-    console.log(counter)
-    counter = counter- 1
-   if (counter === 0 ) return;
-    example()
-}
-example()
+// let counter = 3
+// function example(){
+//     console.log(counter)
+//     counter = counter- 1
+//    if (counter === 0 ) return;
+//     example()
+// }
+// example()
+
+var height = prompt("Enter height: ")
+var base = prompt("Enter base: ")
+
+console.log(`The area of the triangle is ${ parseFloat(height)* 0.5 * parseFloat(base)}`)
