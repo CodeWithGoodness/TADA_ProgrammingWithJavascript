@@ -15,7 +15,7 @@ console.log('Random Hexadecimal:', randomHexadecimal);
 //Write a script which generates a random rgb color number.
 let rgb =""
 for (let j = 1; j <= 3 ; j++){
-    rgb = rgb + Math.floor(Math.random() * 255) + ","
+    rgb = rgb + Math.floor(Math.random() * 256) + ","
 }
 console.log(`rgb(${rgb})`)
 

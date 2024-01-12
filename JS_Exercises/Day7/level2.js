@@ -7,11 +7,10 @@ function solveLinEquation (a, b, c, x, y){
 console.log(solveLinEquation(1,2,3,4,5))
 
 // Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
-function solveQuadratic(a, b, c){
+function solveQuadratic(a = 0, b = 0, c = 0){
     let answer = `${Math.floor((-b+Math.sqrt(Math.pow(b,2) - 4 * a * c))/ 2*a)} or ${Math.floor((-b-Math.sqrt(Math.pow(b,2) - 4 * a * c))/ 2*a)}`
     return answer
 }
-console.log(solveQuadratic(34,67,8))
 console.log(solveQuadratic()) // {0}
 console.log(solveQuadratic(1, 4, 4)) // {-2}
 console.log(solveQuadratic(1, -1, -2)) // {2, -1}
@@ -140,21 +139,54 @@ function evensAndOdds(number){
 console.log(evensAndOdds(100))
 
 // Write a function which takes any number of arguments and return the sum of the arguments
+function sum (){
+    let sum = 0
+    for(let i = 0 ; i < arguments.length; i++){
+        sum += arguments[i]
+    }
+    return sum
+}
+console.log(sum(1, 2, 3)) // -> 6
+console.log(sum(1, 2, 3, 4)) // -> 10
 
-// sum(1, 2, 3) // -> 6
-// sum(1, 2, 3, 4) // -> 10
 // Write a function which generates a randomUserIp.
+function randomUserIp(){
+    const userIp = []
+    for (let i = 1; i <= 4 ; i++){
+        userIp.push(Math.floor(Math.random() * 256))
+    }
+    return userIp.join('.')
+}
+console.log(randomUserIp())
 
 // Write a function which generates a randomMacAddress
+function generateRandomMacAddress() {
+    const userIp = []
+    for (let i = 1; i <= 6 ; i++){
+        userIp.push((Math.floor(Math.random() * 256)).toString(16))
+    }
+    return userIp.join(':')
+}
+console.log(generateRandomMacAddress())
 
 // Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
+function randomHexaNumberGenerator(){
+    let randomHexadecimal = Math.floor(Math.random() * 16777215).toString(16)
+    return randomHexadecimal
+}
+console.log('Random Hexadecimal:', randomHexaNumberGenerator());
 
-// console.log(randomHexaNumberGenerator());
-// '#ee33df'
 // Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
+function userIdGenerator(){
+    let characters = 'abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ', randomId = ""
+    for(let i = 1; i <= 7; i++){
+        randomId += (characters[Math.floor(Math.random() * 62)])
+    }
+    return randomId
+}
+console.log(userIdGenerator())
 
-// console.log(userIdGenerator());
-// 41XTDbE
+
 
 
 

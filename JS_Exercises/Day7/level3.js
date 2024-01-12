@@ -1,5 +1,15 @@
 // Exercises: Level 3
-// Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+// Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). 
+//One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+function userIdGeneratedByUser(){
+    let characters = 'abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ', randomId = ""
+    let numberOfCharacters = prompt("Enter the number of characters: ")
+    for(let i = 1; i <= 7; i++){
+        randomId += (characters[Math.floor(Math.random() * 62)])
+    }
+    return randomId
+}
+console.log(userIdGenerator())
 
 // userIdGeneratedByUser()
 // 'kcsy2
