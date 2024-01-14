@@ -8,97 +8,18 @@ const products = [
   { product: 'avocado', price: 8 },
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
-]
-
-// Explain the difference between forEach, map, filter, and reduce.
-console.log(`forEach is used to iterate through an array. it takes a callback functon with elements, index parameter and the array itself`)
-console.log(`map is used to iteratea through and modify an array. it takes a callback functon with elements, index and the array itself`)
-console.log(`filter is used to iterate through an array and eliminate elements that satisfy a given condition.`)
-console.log('reduce takes a callback function with accumulator, current and optional initial value as parameters \n')
-
-// Define a callback function before you use it in forEach, map, filter or reduce.
-console.log("A callback function is a function which is passed as a parameter to another function called a higher order function \n")
-
-// Use forEach to console.log each country in the countries array.
-countries.forEach((country) => console.log(country))
-console.log("\n")
-// Use forEach to console.log each name in the names array.
-names.forEach((name) => console.log(name))
-console.log("\n")
-// Use forEach to console.log each number in the numbers array.
-numbers.forEach((num) => console.log(num))
-console.log("\n")
-// Use map to create a new array by changing each country to uppercase in the countries array.
-countries.map((country) => console.log(country.toLocaleUpperCase()))
-console.log("\n")
-// Use map to create an array of countries length from countries array.
-countries.map((country) => console.log(country.length))
-console.log("\n")
-// Use map to create a new array by changing each number to square in the numbers array
-numbers.map((num) => console.log(num ** 2))
-console.log("\n")
-// Use map to change to each name to uppercase in the names array
-names.map((name) => console.log(name.toUpperCase()))
-console.log("\n")
-
-// Use map to map the products array to its corresponding prices.
-
-// Use filter to filter out countries containing land.
-console.log(countries.filter((country) => country.includes("land")))
-
-// Use filter to filter out countries having six character.
-console.log(countries.filter((country) => country.length == 6))
-
-// Use filter to filter out countries containing six letters and more in the country array.
-console.log(countries.filter((country) => country.length >= 6))
-
-// Use filter to filter out country start with 'E';
-console.log(countries.filter((country) => country[0] == 'E'))
-
-// Use filter to filter out only prices with values.
-//console.log(products.filter((i) => Object.values(i).matches(/\d+/)))
-
-// Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
-
-// Use reduce to sum all the numbers in the numbers array.
-console.log(numbers.reduce((sum, num) => sum + num))
-
-// Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
-console.log(`${countries.reduce((all, each) => {
-    countries[] 
-}
-    
-    all +" "+each, "Estonia")} are north European countries`)
-// Explain the difference between some and every
-// Use some to check if some names' length greater than seven in names array
-// Use every to check if all the countries contain the word land
-// Explain the difference between find and findIndex.
-// Use find to find the first country containing only six letters in the countries array
-// Use findIndex to find the position of the first country containing only six letters in the countries array
-// Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
-// Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Exercises: Level 2
-// Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
+]// Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
 // Find the sum of price of products using only reduce reduce(callback))
 // Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 // Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
 // Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
 // Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
 // Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+
+
+
+
+
 // Exercises: Level 3
 // Use the countries information, in the data folder. Sort countries by name, by capital, by population
 
