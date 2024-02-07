@@ -3,6 +3,4 @@
 /*
 comments can make codes readable, easy to reuse and informative
 this is a multiline comment
-*/ 
-
-
+*/
