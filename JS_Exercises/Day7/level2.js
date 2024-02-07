@@ -7,10 +7,18 @@ function solveLinEquation (a, b, c, x, y){
 console.log(solveLinEquation(1,2,3,4,5))
 
 // Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
+<<<<<<< HEAD
 function solveQuadratic(a = 0, b = 0, c = 0){
     let answer = `${Math.floor((-b+Math.sqrt(Math.pow(b,2) - 4 * a * c))/ 2*a)} or ${Math.floor((-b-Math.sqrt(Math.pow(b,2) - 4 * a * c))/ 2*a)}`
     return answer
 }
+=======
+function solveQuadratic(a, b, c){
+    let answer = `${Math.floor((-b+Math.sqrt(Math.pow(b,2) - 4 * a * c))/ 2*a)} or ${Math.floor((-b-Math.sqrt(Math.pow(b,2) - 4 * a * c))/ 2*a)}`
+    return answer
+}
+console.log(solveQuadratic(34,67,8))
+>>>>>>> 2af1e5a18dab7c6646f4735915eeacdd6f1aa746
 console.log(solveQuadratic()) // {0}
 console.log(solveQuadratic(1, 4, 4)) // {-2}
 console.log(solveQuadratic(1, -1, -2)) // {2, -1}
@@ -139,6 +147,7 @@ function evensAndOdds(number){
 console.log(evensAndOdds(100))
 
 // Write a function which takes any number of arguments and return the sum of the arguments
+<<<<<<< HEAD
 function sum (){
     let sum = 0
     for(let i = 0 ; i < arguments.length; i++){
@@ -187,6 +196,23 @@ function userIdGenerator(){
 console.log(userIdGenerator())
 
 
+=======
+
+// sum(1, 2, 3) // -> 6
+// sum(1, 2, 3, 4) // -> 10
+// Write a function which generates a randomUserIp.
+
+// Write a function which generates a randomMacAddress
+
+// Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
+
+// console.log(randomHexaNumberGenerator());
+// '#ee33df'
+// Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
+
+// console.log(userIdGenerator());
+// 41XTDbE
+>>>>>>> 2af1e5a18dab7c6646f4735915eeacdd6f1aa746
 
 
 

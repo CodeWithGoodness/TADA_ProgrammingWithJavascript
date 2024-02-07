@@ -1,4 +1,5 @@
 // Exercises: Level 3
+<<<<<<< HEAD
 // Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). 
 //One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
 function userIdGeneratedByUser(){
@@ -10,6 +11,9 @@ function userIdGeneratedByUser(){
     return randomId
 }
 console.log(userIdGenerator())
+=======
+// Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+>>>>>>> 2af1e5a18dab7c6646f4735915eeacdd6f1aa746
 
 // userIdGeneratedByUser()
 // 'kcsy2
