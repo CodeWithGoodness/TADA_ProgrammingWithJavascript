@@ -1,6 +1,6 @@
-var countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
-var names = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// var countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+// var names = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
+// var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var products = [
     { product: 'banana', price: 3 },
     { product: 'mango', price: 6 },
@@ -38,6 +38,12 @@ console.log("\n");
 names.map(function (name) { return console.log(name.toUpperCase()); });
 console.log("\n");
 // Use map to map the products array to its corresponding prices.
+const pro = (products.map(element => {
+    const newObj = {}
+    newObj[element.product] = element.price
+    return newObj
+}))
+console.log(pro)
 // Use filter to filter out countries containing land.
 console.log(countries.filter(function (country) { return country.includes("land"); }));
 console.log("\n");
@@ -53,6 +59,11 @@ console.log("\n");
 // Use filter to filter out only prices with values.
 console.log(products.filter((i) => typeof(i.price) == 'number' && !isNaN(i.price)))
 // Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
+function getStringLists(array){
+   const filtArray = array.filter(element => typeof(element) == 'string')
+  return filtArray
+}
+console.log(getStringLists(["a", "b",9]))
 // Use reduce to sum all the numbers in the numbers array.
 console.log(numbers.reduce(function (sum, num) { return sum + num; }));
 console.log("\n");
