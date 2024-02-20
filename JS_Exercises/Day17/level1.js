@@ -1,29 +1,29 @@
 // // Store you first name, last name, age, country, city in your browser localStorage.
-// let firstName = "Goodness"
-// let lastName = "Okoro"
-// let age = 10
-// let country = "USA"
-// let city = "NYC"
-// localStorage.setItem("firstname", firstName)
-// localStorage.setItem("Lastname", lastName)
-// localStorage.setItem("age", age)
-// localStorage.setItem("country", country)
-// localStorage.setItem("City", city)
+let firstName = "Goodness"
+let lastName = "Okoro"
+let age = 10
+let country = "USA"
+let city = "NYC"
+localStorage.setItem("firstname", firstName)
+localStorage.setItem("Lastname", lastName)
+localStorage.setItem("age", age)
+localStorage.setItem("country", country)
+localStorage.setItem("City", city)
 
 // // Level 2
 // // Create a student object. The student object will have first name, last name, age, skills, country, enrolled keys and values for the keys.
 // //Store the student object in your browser localStorage.
-// const student = {
-//     firstname:"Goodness",
-//     lastName : "Okoro",
-//     age : 10,
-//     skills: ["HTML", "CSS", "Java", "Python", "JavaScript"],
-//     country : "USA",
-// }
+const student = {
+    firstname:"Goodness",
+    lastName : "Okoro",
+    age : 10,
+    skills: ["HTML", "CSS", "Java", "Python", "JavaScript"],
+    country : "USA",
+}
 
-// const StringifyObject = JSON.stringify(student, undefined, 2)
-// localStorage.setItem("student", StringifyObject)
-// console.log(localStorage)
+const StringifyObject = JSON.stringify(student, undefined, 2)
+localStorage.setItem("student", StringifyObject)
+console.log(localStorage)
 
 // // Exercises: Level 3
 // // Create an object called personAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance

@@ -1,6 +1,6 @@
-// var countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
-// var names = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
-// var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+var names = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var products = [
     { product: 'banana', price: 3 },
     { product: 'mango', price: 6 },

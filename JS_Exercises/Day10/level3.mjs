@@ -13,7 +13,6 @@ console.log(numberOfLanguages(countries))
 const mostSpokenLanguages = (countries, num) => {
    const countryArray = []
    const count = {}
-   const arr = []
    countries.forEach(element => {
       countryArray.push(...element.languages)
    })
