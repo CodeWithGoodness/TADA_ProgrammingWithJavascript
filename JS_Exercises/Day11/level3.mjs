@@ -1,4 +1,10 @@
+import countries from "../Day9/countries.mjs"
+
 // Destructure the countries object print name, capital, population and languages of all countries
+countries.forEach(element => {
+    let {name, capital, population, languages} = element
+    console.log(name,capital, population, languages)
+})
 // A junior developer structure student name, skills and score in array of arrays which may not easy to read. Destructure the following array name to name, 
 //skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.
 const student1 = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]

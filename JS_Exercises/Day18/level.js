@@ -14,7 +14,7 @@ fetch(countriesAPI)
     .catch(error => console.log(error))
 
 // Exercises: Level 2
-// Print out all the cat names in to catNames variable.
+// Print out all the cat names into catNames variable.
 const catNames = fetch(catsAPI)
     .then(response => response.json())
     .then(data => {data.forEach(cat => console.log(cat.name))})
